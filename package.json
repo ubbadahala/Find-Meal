@@ -23,6 +23,7 @@
     "devDependencies": {
         "@babel/core": "^7.15.0",
         "@babel/preset-env": "^7.15.0",
+        "animate.css": "^4.1.1",
         "aos": "^2.3.4",
         "babel-loader": "^8.2.2",
         "bootstrap": "^5.1.0",
