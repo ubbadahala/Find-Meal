@@ -1,0 +1,41 @@
+{
+    "name": "dicoding_tafundamentalfed",
+    "version": "1.0.0",
+    "description": "node package manager for Dicoding course \"Belajar Fundamental Web Development\" submission.",
+    "main": "index.js",
+    "scripts": {
+        "start-dev": "webpack serve --config webpack.dev.js",
+        "build": "webpack --config webpack.prod.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ubbadahala/Dicoding_TAFundamentalFED.git"
+    },
+    "author": "Muhammad Ubbadah Al Ala'",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ubbadahala/Dicoding_TAFundamentalFED/issues"
+    },
+    "homepage": "https://github.com/ubbadahala/Dicoding_TAFundamentalFED#readme",
+    "dependencies": {
+        "regenerator-runtime": "^0.13.9"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.15.0",
+        "@babel/preset-env": "^7.15.0",
+        "aos": "^2.3.4",
+        "babel-loader": "^8.2.2",
+        "bootstrap": "^5.1.0",
+        "css-loader": "^6.2.0",
+        "glightbox": "^3.1.0",
+        "html-webpack-plugin": "^5.3.2",
+        "isotope-layout": "^3.0.6",
+        "style-loader": "^3.2.1",
+        "swiper": "^7.0.1",
+        "waypoints": "^4.0.1",
+        "webpack": "^5.51.1",
+        "webpack-cli": "^4.8.0",
+        "webpack-dev-server": "^4.0.0",
+        "webpack-merge": "^5.8.0"
+    }
+}
