@@ -26,22 +26,22 @@ class FoodItem extends HTMLElement {
                     overflow: hidden;
                 }
                 
-                .fan-art-club {
+                .mealPict {
                     width: 100%;
                     max-height: 300px;
                     object-fit: cover;
                     object-position: center;
                 }
                 
-                .club-info {
+                .meal-info {
                     padding: 24px;
                 }
                 
-                .club-info > h2 {
+                .meal-info > h2 {
                     font-weight: lighter;
                 }
                 
-                .club-info > p {
+                .meal-info > p {
                     margin-top: 10px;
                     overflow: hidden;
                     text-overflow: ellipsis;
