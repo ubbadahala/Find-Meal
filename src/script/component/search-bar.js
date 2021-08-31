@@ -1,10 +1,5 @@
 class SearchBar extends HTMLElement {
 
-    constructor() {
-        super();
-        this.shadowDOM = this.attachShadow({ mode: "open" });
-    }
-
     connectedCallback() {
         this.render();
     }
@@ -15,84 +10,27 @@ class SearchBar extends HTMLElement {
     }
 
     get value() {
-        return this.shadowDOM.querySelector("#searchElement").value;
+        return this.querySelector("#searchElement").value;
     }
 
     render() {
-        this.shadowDOM.innerHTML = `
-        <style>
-        .search-container {
-            max-width: 800px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            padding: 16px;
-            border-radius: 15px;
-            display: flex;
-            position: sticky;
-            top: 10px;
-            background-color: white;
-        }
-        
-        .search-container > input {
-            width: 75%;
-            padding: 16px;
-            border: 0;
-            border-bottom: 1px solid #366fa8;
-            font-weight: bold;
-        }
-        
-        .search-container > input:focus {
-            outline: 0;
-            border-bottom: 2px solid #366fa8;
-        }
-        
-        .search-container > input:focus::placeholder {
-            font-weight: bold;
-        }
-        
-        .search-container >  input::placeholder {
-            color: #366fa8;
-            font-weight: normal;
-        }
-        
-        .search-container > button {
-            width: 23%;
-            cursor: pointer;
-            margin-left: auto;
-            padding: 16px;
-            border-radius: 15px;
-            background-color: #366fa8;
-            color: white;
-            border: 0;
-            text-transform: uppercase;
-        }
-
-        .search-container > button:hover {
-            background-color: #22476b
-        }
-        
-        @media screen and (max-width: 550px){
-            .search-container {
-                flex-direction: column;
-                position: static;
-            }
-        
-            .search-container > input {
-                width: 100%;
-                margin-bottom: 12px;
-            }
-        
-            .search-container > button {
-                width: 100%;
-            }
-        }
-        </style>
-        <div id="search-container" class="search-container">
-            <input placeholder="Search by food name" id="searchElement" type="search">
-            <button id="searchButtonElement" type="submit">Find Food</button>
+        this.innerHTML = `
+        <div id="search-container">
+            <div class="mb-4">
+                <label class="block mb-2 text-sm font-bold text-gray-700">
+					Food Name
+				</label>
+                <input class="w-full px-3 py-2 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" id="searchElement" type="search" placeholder="Enter Food Name..." />
+            </div>
+            <div class="mb-6 text-center">
+                <button class="w-full px-4 py-2 font-bold text-white bg-blue-400 rounded-full hover:bg-blue-800 focus:outline-none focus:shadow-outline" id="searchButtonElement" type="submit">
+					Search
+				</button>
+            </div>
         </div>
         `;
 
-        this.shadowDOM.querySelector("#searchButtonElement").addEventListener("click", this._clickEvent);
+        this.querySelector("#searchButtonElement").addEventListener("click", this._clickEvent);
     }
 }
 
