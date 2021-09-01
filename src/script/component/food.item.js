@@ -14,7 +14,7 @@ class FoodItem extends HTMLElement {
                         <img class="h-48 w-full rounded-3xl object-cover md:h-full md:w-48" src="${this._food.strMealThumb}" alt="Food Image">
                     </div>
                     <div class="p-8">
-                        <div class="uppercase tracking-tighter text-3xl text-green-500 font-black">${this._food.strMeal}</div>
+                        <div class="uppercase tracking-normal text-3xl text-green-500 font-black">${this._food.strMeal}</div>
                         <div class="pt-4 pb-2 content-between">
                             <span class="inline-block bg-green-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Area: ${this._food.strArea}</span>
                             <span class="inline-block bg-green-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Category: ${this._food.strCategory}</span>
