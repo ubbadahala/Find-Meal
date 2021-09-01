@@ -83,10 +83,6 @@
         </button>
     </div>
 
-    <div x-data="scrollHandler(document.getElementById('itemFood'))" x-cloak aria-hidden="true" @scroll.window="calculateHeight(window.scrollY)" class="fixed h-screen w-1 top-0 left-0 bg-green-100">
-        <div :style="`max-height:${height}%`" class="h-full bg-green-500"></div>
-    </div>
-
     <footer class="bg-gray-200 w-full py-2 px-2 my-0 mt-20">
         <div class="flex items-center justify-between my-4">
             <p class="inline-flex text-center my-auto text-black-500 px-2">Built with
@@ -131,29 +127,6 @@
             (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ?
             topBtn.classList.remove("hidden"): topBtn.classList.add("hidden");
 
-        }
-
-        // Alpine 2.3.5
-        // Pass in an element or default to the document.body
-        function scrollHandler(element = food - list) {
-            return {
-                height: 0,
-                element: element,
-                calculateHeight(position) {
-                    const distanceFromTop = this.element.offsetTop
-                    const contentHeight = this.element.clientHeight
-                    const visibleContent = contentHeight - window.innerHeight
-                    const start = Math.max(0, position - distanceFromTop)
-                    const percent = (start / visibleContent) * 100;
-                    requestAnimationFrame(() => {
-                        this.height = percent;
-                    });
-                },
-                init() {
-                    this.element = this.element || document.body;
-                    this.calculateHeight(window.scrollY);
-                }
-            };
         }
     </script>
 </body>
