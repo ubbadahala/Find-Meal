@@ -1,10 +1,10 @@
+/* eslint-disable accessor-pairs */
 import './food.item.js'
 
 class FoodList extends HTMLElement {
   /**
      * @param {any} foods
      */
-  // eslint-disable-next-line accessor-pairs
   set foods (foods) {
     this._foods = foods
     this.render()
