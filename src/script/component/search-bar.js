@@ -23,7 +23,7 @@ class SearchBar extends HTMLElement {
                 <input class="w-full px-3 py-2 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" id="searchElement" type="search" placeholder="Enter Food Name..." />
             </div>
             <div class="mb-6 text-center">
-                <button class="w-full px-4 py-2 font-bold text-white bg-blue-400 rounded-full hover:bg-blue-800 focus:outline-none focus:shadow-outline" id="searchButtonElement" type="submit">
+                <button class="w-full px-4 py-2 font-bold text-white bg-yellow-400 rounded-full hover:bg-yellow-600 focus:outline-none focus:shadow-outline" id="searchButtonElement" type="submit">
 					Search
 				</button>
             </div>
