@@ -1,4 +1,3 @@
-/* eslint-disable no-tabs */
 /* eslint-disable accessor-pairs */
 class SearchBar extends HTMLElement {
   connectedCallback () {
@@ -20,17 +19,17 @@ class SearchBar extends HTMLElement {
   render () {
     this.innerHTML = `
         <div id="search-container">
-            <div class="mb-4">
-                <label class="block mb-2 text-sm font-bold text-gray-700">
-                    Food Name
-				</label>
-                <input class="w-full px-3 py-2 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" id="searchElement" type="search" placeholder="Enter Food Name..." />
-            </div>
-            <div class="mb-6 text-center">
-                <button class="w-full px-4 py-2 font-bold text-white bg-green-400 rounded-full hover:bg-green-600 focus:outline-none focus:shadow-outline" id="searchButtonElement" type="submit">
-					Search
-				</button>
-            </div>
+          <div class="mb-4">
+            <label class="block mb-2 text-sm font-bold text-gray-700">
+              Food Name
+            </label>
+              <input class="w-full px-3 py-2 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" id="searchElement" type="search" placeholder="Enter Food Name..." />
+          </div>
+          <div class="mb-6 text-center">
+            <button class="w-full px-4 py-2 font-bold text-white bg-green-400 rounded-full hover:bg-green-600 focus:outline-none focus:shadow-outline" id="searchButtonElement" type="submit">
+              Search
+            </button>
+          </div>
         </div>
         `
 
