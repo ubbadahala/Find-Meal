@@ -1,12 +1,15 @@
+/* eslint-disable accessor-pairs */
 class FoodItem extends HTMLElement {
+  /**
+     * @param {any} food
+     */
+  set food (food) {
+    this._food = food
+    this.render()
+  }
 
-    set food(food) {
-        this._food = food;
-        this.render();
-    }
-
-    render() {
-        this.innerHTML = `
+  render () {
+    this.innerHTML = `
         <div class="flex justify-center px-6 my-auto">
             <div class="max-w-2xl my-8 mx-auto bg-white rounded-3xl shadow2xl md:max-w-2xl">
                 <div class="md:flex">
@@ -28,8 +31,8 @@ class FoodItem extends HTMLElement {
                 </div>
             </div>
         </div>
-        `;
-    }
+        `
+  }
 }
 
-customElements.define("food-item", FoodItem);
+customElements.define('food-item', FoodItem)
