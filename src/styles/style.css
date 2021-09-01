@@ -14,7 +14,7 @@ button:focus {
 }
 
 footer {
-    position: relative;
+    position: fixed;
     padding: 5px;
     bottom: 0;
     width: 100%;

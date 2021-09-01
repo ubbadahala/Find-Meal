@@ -11,7 +11,36 @@
     <link rel="icon" type="image/gif/png" href="/src/styles/fast-food.png">
 </head>
 
-<body class="h-screen overflow-auto flex-row items-center justify-center" style="background: #edf2f7;">
+<body class="h-screen overflow-auto flex-row items-center justify-center" style="background: #e3ffea;">
+    <header>
+        <div class="bg-green-900 text-center py-2 lg:px-2">
+            <div class="p-2 bg-green-800 items-center text-green-100 leading-none lg:rounded-full flex lg:inline-flex" role="alert">
+                <div class="flex items-center justify-between my-4">
+                    <p class="inline-flex text-center my-auto text-black-500 px-2">Built with
+                        <svg fill="#e53e3e" viewBox="0 0 24 24" class="w-5 h-5 mx-1 pt-px text-red-600" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                        </svg>by Ala'</p>
+                    <div class="flex items-center">
+                        <a href="mailto:muhammadubbadah@gmail.com">
+                            <svg fill="none" class="h-6 w-6 text-black-600 mr-2" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                        </a>
+                        <a href="linkedin.com/in/ubbadahala">
+                            <svg class="h-6 w-6 fill-current text-black-600 mr-2" viewBox="0 0 512 512">
+                                <path d="M444.17,32H70.28C49.85,32,32,46.7,32,66.89V441.61C32,461.91,49.85,480,70.28,480H444.06C464.6,480,480,461.79,480,441.61V66.89C480.12,46.7,464.6,32,444.17,32ZM170.87,405.43H106.69V205.88h64.18ZM141,175.54h-.46c-20.54,0-33.84-15.29-33.84-34.43,0-19.49,13.65-34.42,34.65-34.42s33.85,14.82,34.31,34.42C175.65,160.25,162.35,175.54,141,175.54ZM405.43,405.43H341.25V296.32c0-26.14-9.34-44-32.56-44-17.74,0-28.24,12-32.91,23.69-1.75,4.2-2.22,9.92-2.22,15.76V405.43H209.38V205.88h64.18v27.77c9.34-13.3,23.93-32.44,57.88-32.44,42.13,0,74,27.77,74,87.64Z"/>
+                            </svg>
+                        </a>
+                        <a href="twitter.com/tumbledcat">
+                            <svg class="h-6 w-6 fill-current text-black-600 mr-2" viewBox="0 0 512 512">
+                                <path d="M496,109.5a201.8,201.8,0,0,1-56.55,15.3,97.51,97.51,0,0,0,43.33-53.6,197.74,197.74,0,0,1-62.56,23.5A99.14,99.14,0,0,0,348.31,64c-54.42,0-98.46,43.4-98.46,96.9a93.21,93.21,0,0,0,2.54,22.1,280.7,280.7,0,0,1-203-101.3A95.69,95.69,0,0,0,36,130.4C36,164,53.53,193.7,80,211.1A97.5,97.5,0,0,1,35.22,199v1.2c0,47,34,86.1,79,95a100.76,100.76,0,0,1-25.94,3.4,94.38,94.38,0,0,1-18.51-1.8c12.51,38.5,48.92,66.5,92.05,67.3A199.59,199.59,0,0,1,39.5,405.6,203,203,0,0,1,16,404.2,278.68,278.68,0,0,0,166.74,448c181.36,0,280.44-147.7,280.44-275.8,0-4.2-.11-8.4-.31-12.5A198.48,198.48,0,0,0,496,109.5Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
     <body class="font-mono bg-emerald-400">
         <!-- Container -->
@@ -24,12 +53,12 @@
                         </div>
                         <div class="w-full bg-white p-5 rounded-2xl lg:rounded-2xl-none">
                             <div class="px-8 mb-4 text-center">
-                                <h3 class="pt-4 mb-2 text-2xl">Find Your Meals</h3>
+                                <h3 class="pt-4 mb-2 uppercase tracking-tighter text-3xl text-green-500 font-black">Find Your Meals</h3>
                                 <p class="mb-4 text-sm text-gray-700">
                                     Just type down your favourite meal down here and find out how to make it from the instruction below and even the Youtube video tutorial!
                                 </p>
                             </div>
-                            <div class="px-8 pt-6 pb-8 mb-4 bg-white rounded">
+                            <div class="px-8 pt-6 mb-4 bg-white rounded">
                                 <search-bar id="search-container">
                                     <div class="mb-4">
                                         <label class="block mb-2 text-sm font-bold text-gray-700">
@@ -38,19 +67,19 @@
                                         <input class="w-full px-3 py-2 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" id="searchElement" type="search" placeholder="Enter Food Name..." />
                                     </div>
                                     <div class="mb-6 text-center">
-                                        <button class="w-full px-4 py-2 font-bold text-white bg-yellow-400 rounded-full hover:bg-yellow-800 focus:outline-none focus:shadow-outline" id="searchButtonElement" type="submit">
+                                        <button class="w-full px-4 py-2 font-bold text-white bg-green-400 rounded-full hover:bg-green-800 focus:outline-none focus:shadow-outline" id="searchButtonElement" type="submit">
                                             Search
                                         </button>
                                     </div>
                                 </search-bar>
                                 <hr class="mb-6 border-t" />
                                 <div class="text-center">
-                                    <p class="inline-block text-sm text-yellow-500 align-baseline hover:text-yellow-800">
+                                    <p class="inline-block text-sm text-green-500 align-baseline hover:text-green-800">
                                         Database provided by themealdb.com/api.php
                                     </p>
                                 </div>
                                 <div class="text-center">
-                                    <p class="inline-block text-sm text-yellow-500 align-baseline hover:text-yellow-800">
+                                    <p class="inline-block text-sm text-green-500 align-baseline hover:text-green-800">
                                         Random food images provided by source.unsplash.com
                                     </p>
                                 </div>
@@ -61,7 +90,10 @@
             </div>
         </div>
     </body>
-    <food-list id="foodList"></food-list>
+
+    <div id="itemFood">
+        <food-list id="foodList" class="bottom-10"></food-list>
+    </div>
 
     <div x-data="topBtn">
         <button @click="scrolltoTop" class="p-3 fixed bottom-10 right-10 animate-bounce z-10 rounded-full shadow-md bg-gray-100 hidden" id="topButton">
@@ -73,33 +105,12 @@
         </button>
     </div>
 
-    <div x-data="scrollProgress" class="fixed inline-flex items-center justify-center overflow-hidden rounded-full left-5 top-5">
-        <!-- Building a Progress Ring: https://css-tricks.com/building-progress-ring-quickly/ -->
-        <svg class="w-20 h-20">
-        <circle
-          class="text-gray-300"
-          stroke-width="5"
-          stroke="currentColor"
-          fill="white"
-          r="30"
-          cx="40"
-          cy="40"
-        />
-        <circle
-          class="text-green-600"
-          stroke-width="5"
-          :stroke-dasharray="circumference"
-          :stroke-dashoffset="circumference - percent / 100 * circumference"
-          stroke-linecap="round"
-          stroke="currentColor"
-          fill="white"
-          r="30"
-          cx="40"
-          cy="40"
-        />
-      </svg>
-        <span class="absolute text-xl text-green-700" x-text="`${percent}%`"></span>
+    <div x-data="scrollHandler(document.getElementById('itemFood'))" x-cloak aria-hidden="true" @scroll.window="calculateHeight(window.scrollY)" class="fixed h-screen w-1 top-0 left-0 bg-gray-300">
+        <div :style="`max-height:${height}%`" class="h-full bg-green-500"></div>
     </div>
+
+
+    <!-- Dev tools -->
 
     <script>
         document.addEventListener('alpine:init', () => {
@@ -118,48 +129,29 @@
 
         }
 
-        const scrollProgress = () => {
+        // Alpine 2.3.5
+        // Pass in an element or default to the document.body
+        function scrollHandler(element = food - list) {
             return {
-                init() {
-                    window.addEventListener('scroll', () => {
-                        let winScroll = document.body.scrollTop || document.documentElement.scrollTop
-                        let height = document.documentElement.scrollHeight - document.documentElement.clientHeight
-                        this.percent = Math.round((winScroll / height) * 100)
-                    })
+                height: 0,
+                element: element,
+                calculateHeight(position) {
+                    const distanceFromTop = this.element.offsetTop
+                    const contentHeight = this.element.clientHeight
+                    const visibleContent = contentHeight - window.innerHeight
+                    const start = Math.max(0, position - distanceFromTop)
+                    const percent = (start / visibleContent) * 100;
+                    requestAnimationFrame(() => {
+                        this.height = percent;
+                    });
                 },
-                circumference: 30 * 2 * Math.PI,
-                percent: 0,
-            }
+                init() {
+                    this.element = this.element || document.body;
+                    this.calculateHeight(window.scrollY);
+                }
+            };
         }
     </script>
-</body>
-
-<footer class="bg-gray-200 w-full py-2 px-2 my-0 mt-20">
-    <div class="flex items-center justify-between my-4">
-        <p class="inline-flex text-center my-auto text-black-500 px-2">Built with
-            <svg fill="#e53e3e" viewBox="0 0 24 24" class="w-5 h-5 mx-1 pt-px text-red-600" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
-            </svg>by Ala'</p>
-        <div class="flex items-center">
-            <a href="mailto:muhammadubbadah@gmail.com">
-                <svg fill="none" class="h-6 w-6 text-black-600 mr-6" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                </svg>
-            </a>
-            <a href="linkedin.com/in/ubbadahala">
-                <svg class="h-6 w-6 fill-current text-black-600 mr-6" viewBox="0 0 512 512">
-                    <path d="M444.17,32H70.28C49.85,32,32,46.7,32,66.89V441.61C32,461.91,49.85,480,70.28,480H444.06C464.6,480,480,461.79,480,441.61V66.89C480.12,46.7,464.6,32,444.17,32ZM170.87,405.43H106.69V205.88h64.18ZM141,175.54h-.46c-20.54,0-33.84-15.29-33.84-34.43,0-19.49,13.65-34.42,34.65-34.42s33.85,14.82,34.31,34.42C175.65,160.25,162.35,175.54,141,175.54ZM405.43,405.43H341.25V296.32c0-26.14-9.34-44-32.56-44-17.74,0-28.24,12-32.91,23.69-1.75,4.2-2.22,9.92-2.22,15.76V405.43H209.38V205.88h64.18v27.77c9.34-13.3,23.93-32.44,57.88-32.44,42.13,0,74,27.77,74,87.64Z"/>
-                </svg>
-            </a>
-            <a href="twitter.com/tumbledcat">
-                <svg class="h-6 w-6 fill-current text-black-600 mr-6" viewBox="0 0 512 512">
-                    <path d="M496,109.5a201.8,201.8,0,0,1-56.55,15.3,97.51,97.51,0,0,0,43.33-53.6,197.74,197.74,0,0,1-62.56,23.5A99.14,99.14,0,0,0,348.31,64c-54.42,0-98.46,43.4-98.46,96.9a93.21,93.21,0,0,0,2.54,22.1,280.7,280.7,0,0,1-203-101.3A95.69,95.69,0,0,0,36,130.4C36,164,53.53,193.7,80,211.1A97.5,97.5,0,0,1,35.22,199v1.2c0,47,34,86.1,79,95a100.76,100.76,0,0,1-25.94,3.4,94.38,94.38,0,0,1-18.51-1.8c12.51,38.5,48.92,66.5,92.05,67.3A199.59,199.59,0,0,1,39.5,405.6,203,203,0,0,1,16,404.2,278.68,278.68,0,0,0,166.74,448c181.36,0,280.44-147.7,280.44-275.8,0-4.2-.11-8.4-.31-12.5A198.48,198.48,0,0,0,496,109.5Z"/>
-                </svg>
-            </a>
-        </div>
-    </div>
-</footer>
-
 </body>
 
 </html>
