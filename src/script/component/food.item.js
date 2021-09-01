@@ -11,7 +11,7 @@ class FoodItem extends HTMLElement {
             <div class="max-w-2xl my-8 mx-auto bg-white rounded-3xl shadow2xl md:max-w-2xl">
                 <div class="md:flex">
                     <div class="md:flex-shrink-0">
-                        <img class="h-48 w-full rounded-3xl object-cover md:h-full md:w-48" src="${this._food.strMealThumb}" alt="Man looking at item at a store">
+                        <img class="h-48 w-full rounded-3xl object-cover md:h-full md:w-48" src="${this._food.strMealThumb}" alt="Food Image">
                     </div>
                     <div class="p-8">
                         <div class="uppercase tracking-tighter text-3xl text-green-500 font-black">${this._food.strMeal}</div>
