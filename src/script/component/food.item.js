@@ -8,7 +8,7 @@ class FoodItem extends HTMLElement {
     render() {
         this.innerHTML = `
         <div class="flex justify-center px-6 my-2">
-            <div class="max-w-md my-8 mx-auto bg-white rounded-3xl shadow-md md:max-w-md">
+            <div class="max-w-2xl my-8 mx-auto bg-white rounded-3xl shadow2xl md:max-w-2xl">
                 <div class="md:flex">
                     <div class="md:flex-shrink-0">
                         <img class="h-48 w-full rounded-3xl object-cover md:h-full md:w-48" src="${this._food.strMealThumb}" alt="Man looking at item at a store">
