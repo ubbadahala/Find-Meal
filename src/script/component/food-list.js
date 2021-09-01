@@ -18,7 +18,7 @@ class FoodList extends HTMLElement {
 
     renderError(message) {
         this.innerHTML = `
-        <div class="modal text-white px-6 py-4 border-0 rounded-2xl absolute top-3 left-3 mb-4 bg-red-500">
+        <div class="modal text-white px-6 py-4 border-0 rounded-2xl absolute bottom-3 left-3 mb-4 bg-red-500">
             <span class="text-xl inline-block mr-5 align-middle">
                 <i class="fas fa-bell" />
             </span>
