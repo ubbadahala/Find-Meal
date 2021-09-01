@@ -14,7 +14,7 @@ class FoodItem extends HTMLElement {
                     <!-- Row -->
                     <div class="w-full xl:w-3/4 lg:w-11/12 flex">
                         <!-- Col -->
-                        <div class="w-full h-auto bg-gray-400 lg:block lg:w-1/2 bg-cover rounded-2xl" style="background-image: url('${this._food.strMealThumb}')"></div>
+                        <div class="w-full h-auto hidden bg-gray-400 lg:block lg:w-1/2 bg-cover rounded-2xl" style="background-image: url('${this._food.strMealThumb}')"></div>
                         <!-- Col -->
                         <div class="w-full lg:w-1/2 bg-white p-5 rounded-lg lg:rounded-2xl">
                             <div class="px-8 mb-4 text-center">
