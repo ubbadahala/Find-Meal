@@ -62,6 +62,76 @@
         </div>
     </body>
     <food-list id="foodList"></food-list>
+
+    <div x-data="topBtn">
+        <button @click="scrolltoTop" class="p-3 fixed bottom-10 right-10 animate-bounce z-10 rounded-full shadow-md bg-gray-100 hidden" id="topButton">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18">
+                </path>
+            </svg>
+        </button>
+    </div>
+
+    <div x-data="scrollProgress" class="fixed inline-flex items-center justify-center overflow-hidden rounded-full left-5 top-5">
+        <!-- Building a Progress Ring: https://css-tricks.com/building-progress-ring-quickly/ -->
+        <svg class="w-20 h-20">
+        <circle
+          class="text-gray-300"
+          stroke-width="5"
+          stroke="currentColor"
+          fill="transparent"
+          r="30"
+          cx="40"
+          cy="40"
+        />
+        <circle
+          class="text-yellow-600"
+          stroke-width="5"
+          :stroke-dasharray="circumference"
+          :stroke-dashoffset="circumference - percent / 100 * circumference"
+          stroke-linecap="round"
+          stroke="currentColor"
+          fill="transparent"
+          r="30"
+          cx="40"
+          cy="40"
+        />
+      </svg>
+        <span class="absolute text-xl text-yellow-700" x-text="`${percent}%`"></span>
+    </div>
+
+    <script>
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('topBtn', () => ({
+                scrolltoTop() {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                }
+            }));
+        });
+
+        var topBtn = document.getElementById("topButton");
+        window.onscroll = function() {
+            (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ?
+            topBtn.classList.remove("hidden"): topBtn.classList.add("hidden");
+
+        }
+
+        const scrollProgress = () => {
+            return {
+                init() {
+                    window.addEventListener('scroll', () => {
+                        let winScroll = document.body.scrollTop || document.documentElement.scrollTop
+                        let height = document.documentElement.scrollHeight - document.documentElement.clientHeight
+                        this.percent = Math.round((winScroll / height) * 100)
+                    })
+                },
+                circumference: 30 * 2 * Math.PI,
+                percent: 0,
+            }
+        }
+    </script>
 </body>
 
 <footer class="bg-gray-200 w-full py-2 px-2 my-0 mt-20">
