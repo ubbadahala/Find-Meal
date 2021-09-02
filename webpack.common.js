@@ -1,5 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const webpack = require('webpack')
 const path = require('path')
+const ESLintPlugin = require('eslint-webpack-plugin')
 
 module.exports = {
   entry: './src/app.js',
@@ -20,6 +22,8 @@ module.exports = {
     }]
   },
   plugins: [
+    new ESLintPlugin(),
+    new webpack.ProgressPlugin(),
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: 'index.html'
