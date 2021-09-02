@@ -2,6 +2,7 @@ import '../component/search-bar.js'
 import '../component/search-header.js'
 import '../component/copyright-data.js'
 import '../component/food-list.js'
+import '../component/scroll-button.js'
 
 import DataSource from '../data/data-source.js'
 
