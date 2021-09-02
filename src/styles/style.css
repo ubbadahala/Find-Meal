@@ -16,7 +16,7 @@ html {
     z-index: -10;
     color: white;
     text-align: center;
-    line-height: 100vh;
+    line-height: 90vh;
     transition: all 0.5s;
 }
 
@@ -33,7 +33,7 @@ html {
     z-index: 200;
     color: white;
     text-align: center;
-    line-height: 100vh;
+    line-height: 90vh;
 }
 
 @keyframes fadeIn {
