@@ -3,7 +3,6 @@ import '../component/search-header.js'
 import '../component/copyright-data.js'
 import '../component/food-list.js'
 
-import 'alpinejs/dist/cdn.min.js'
 import DataSource from '../data/data-source.js'
 
 const main = () => {
