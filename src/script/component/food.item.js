@@ -19,8 +19,8 @@ class FoodItem extends HTMLElement {
                     <div class="p-8">
                         <div class="uppercase tracking-normal text-3xl text-green-500 font-black">${this._food.strMeal}</div>
                         <div class="pt-4 pb-2 content-between">
-                            <span class="inline-block bg-green-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#${this._food.strArea}</span>
-                            <span class="inline-block bg-green-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#${this._food.strCategory}</span>
+                            <span class="inline-block bg-green-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2" id="${this._food.strArea}">#${this._food.strArea}</span>
+                            <span class="inline-block bg-green-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2" id="${this._food.strCategory}">#${this._food.strCategory}</span>
                         </div>
                         <div class="m-0">
                             <span class="inline-block bg-red-100 hover:bg-red-500 hover:text-white rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"><a href="${this._food.strYoutube}" target=”_blank”>Watch on Youtube</a></span>
