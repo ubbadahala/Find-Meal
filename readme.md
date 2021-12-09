@@ -7,7 +7,7 @@ In this website you can find informations like where is the meal come from, what
 
 This website is built for submission task at [Dicoding 🇮🇩](https://www.dicoding.com)
 
-## To see how this project looks like
+## How This Project Looks Like
 Simply fork this repository and download the file inside. After that run the following command inside the project directory 
 - `npm install` *to install the dependencies* 
 - `npm run build` *to build the entire project to become final product* 
